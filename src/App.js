@@ -9,7 +9,14 @@ function App() {
   useEffect(() => {
     // fetch data
     const dataFetch = async () => {
-      const data = await (await fetch("/api/tasks")).json();
+      const data = await (
+        await fetch("/api/tasks", {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        })
+      ).json();
 
       // set state when the data received
       setWorkouts(data);
