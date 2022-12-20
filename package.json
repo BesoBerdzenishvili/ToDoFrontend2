@@ -1,5 +1,5 @@
 {
-  "proxy": "https://dull-lime-centipede-belt.cyclic.app/",
+  "proxy": "https://todo-backend-api2.onrender.com",
   "name": "frontend2",
   "version": "0.1.0",
   "private": true,
