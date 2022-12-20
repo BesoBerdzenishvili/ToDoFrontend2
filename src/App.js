@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 function App() {
-  const [count, setCount] = useState(0);
   const [workouts, setWorkouts] = useState([]);
-  const increase = () => {
-    setCount(count + 1);
-  };
 
   useEffect(() => {
     // fetch data
@@ -28,9 +24,7 @@ function App() {
 
   return (
     <div>
-      {/* <button onClick={() => setShow(!show)}>data!</button> */}
-      <button onClick={increase}>Click!</button>
-      <p>{count}</p>
+      <h1>Test Data fetch</h1>
       {workouts && workouts.map((i) => <p key={i._id}>{i.text}</p>)}
     </div>
   );
